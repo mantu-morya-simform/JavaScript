@@ -63,7 +63,7 @@ const reset = (e) => {
     inputText.textContent = "";
     inputText.value = "";
     MessageText.textContent = "";
-    remaningChance = 5;
+    remaningChance = 10;
     remaningChanceText.textContent = `Remaning Chance : ${remaningChance}`;
   }
 };

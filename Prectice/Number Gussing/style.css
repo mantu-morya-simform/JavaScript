@@ -15,7 +15,8 @@ html {
 }
 
 .game {
-  max-width: 300px;
+  width: 400px;
+  height: 300px;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -23,13 +24,13 @@ html {
   background: #495057;
   min-height: 200px;
   min-width: 100px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .input_text {
-  padding: 5px;
+  padding: 15px;
   outline: none;
-  margin: 10px;
+  margin: 20px 0px;
   min-width: 200px;
 }
 
@@ -40,7 +41,7 @@ html {
 }
 
 .btn button {
-  padding: 5px 10px;
+  padding: 15px 30px;
   border-radius: 5px;
   border: 1px solid #ffffff;
   cursor: pointer;
@@ -56,8 +57,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 30px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .message {
