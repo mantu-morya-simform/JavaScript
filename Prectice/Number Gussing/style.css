@@ -27,6 +27,20 @@ html {
   padding: 30px;
 }
 
+.winPoints {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.win_para {
+  color: #40c057;
+}
+
+.lose_para {
+  color: #c92a2a;
+}
 .input_text {
   padding: 15px;
   outline: none;
