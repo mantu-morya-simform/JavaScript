@@ -22,7 +22,7 @@ const p3 = () => {
   });
 };
 
-Promise.all([p1(), p2(), p3()])
+Promise.all([p1()\, p2(), p3()])
   .then((responseArray) => {
     console.log("Response Array", responseArray);
   })

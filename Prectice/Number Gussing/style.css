@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #343a40;
+}
+
+.game {
+  max-width: 300px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  color: #ffffff;
+  background: #495057;
+  min-height: 200px;
+  min-width: 100px;
+  padding: 20px;
+}
+
+.input_text {
+  padding: 5px;
+  outline: none;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.btn {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  background: #ced4da;
+  font-weight: 600;
+}
+
+.btn button:hover {
+  background: #9fa6ae;
+}
+
+.remaning_chance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.message {
+  padding-left: 10px;
+  color: rgb(0, 0, 0);
+}
