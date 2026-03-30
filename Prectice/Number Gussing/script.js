@@ -38,11 +38,6 @@ const click = (e) => {
     } else {
       MessageText.textContent = `You Guessed Exact Number!`;
       MessageText.style.cssText = "color:#40c057; font-weight:600";
-      inputText.textContent = "";
-      inputText.value = "";
-      MessageText.textContent = "";
-      remaningChance = 5;
-      remaningChanceText.textContent = `Remaning Chance : ${remaningChance}`;
     }
   } else {
     MessageText.textContent = `Provide Input As Valid Number`;
