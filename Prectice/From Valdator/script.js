@@ -76,6 +76,8 @@ const clearForm = (inputElement, errElement) => {
 };
 
 const validateName = (inputElement, errElement) => {
+  console.log(errorMsgConfig["userNameLengthLess"]);
+
   let userName = inputElement.value.trim("");
   if (userName.length < 8) {
     errElement.textContent = "UserName Length Must be grator then 8";
