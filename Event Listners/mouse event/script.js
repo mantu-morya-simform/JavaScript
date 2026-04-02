@@ -18,29 +18,32 @@
 //   }
 // });
 /*
-const executeOnLongPress = (id) => {
-  let btnElement = document.querySelector(`#${id}`);
-
+const executeOnLongPress = (element, time, callback, ...args) => {
   let downTime = 0;
 
-  btnElement.addEventListener("mousedown", (e) => {
+  element.addEventListener("mousedown", (e) => {
     downTime = e.timeStamp;
-    console.log(`Mouse Down At:, ${new Date(downTime).toLocaleString()}`);
   });
 
-  btnElement.addEventListener("mouseup", (e) => {
+  element.addEventListener("mouseup", (e) => {
     let upTime = e.timeStamp;
-    console.log(`Mouse Up At:, ${new Date(upTime).toLocaleString()}`);
-
     let duration = (upTime - downTime) / 1000; //time in second
 
-    if (duration > 3) {
-      alert(`Held For: ${duration.toFixed(2)} seconds`);
+    if (duration >= time) {
+      callback(...args);
     }
   });
 };
-
-executeOnLongPress("btn");
 */
 
-executeOnLongPress("btn");
+import { executeOnLongPress } from "https://cdn.jsdelivr.net/gh/mantu-morya-simform/JS-Questions/my-js-utils/longPress.js?v=1";
+function callback(name, age) {
+  alert(`${name} is ${age} years old`);
+}
+
+let btnElement = document.querySelector("button");
+console.log(btnElement);
+
+executeOnLongPress(btnElement, 2, callback, "mantu", 21);
+
+// executeOnLongPress("btn");
