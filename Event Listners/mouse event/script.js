@@ -36,13 +36,12 @@ const executeOnLongPress = (element, time, callback, ...args) => {
 };
 */
 
-import { executeOnLongPress } from "https://cdn.jsdelivr.net/gh/mantu-morya-simform/JS-Questions/my-js-utils/longPress.js?v=1";
+import { executeOnLongPress } from "https://cdn.jsdelivr.net/gh/mantu-morya-simform/JS-Questions@main/my-js-utils/longPress.js";
 function callback(name, age) {
   alert(`${name} is ${age} years old`);
 }
 
 let btnElement = document.querySelector("button");
-console.log(btnElement);
 
 executeOnLongPress(btnElement, 2, callback, "mantu", 21);
 
