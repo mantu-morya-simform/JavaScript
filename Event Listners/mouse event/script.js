@@ -36,13 +36,25 @@ const executeOnLongPress = (element, time, callback, ...args) => {
 };
 */
 
-import { executeOnLongPress } from "https://cdn.jsdelivr.net/gh/mantu-morya-simform/JS-Questions@main/my-js-utils/longPress.js";
-function callback(name, age) {
-  alert(`${name} is ${age} years old`);
+// import { executeOnLongPress } from "https://cdn.jsdelivr.net/gh/mantu-morya-simform/JS-Questions@main/my-js-utils/longPress.js";
+// function callback(name, age) {
+//   alert(`${name} is ${age} years old`);
+// }
+
+// let btnElement = document.querySelector("button");
+
+// executeOnLongPress(btnElement, 2, callback, "mantu", 21);
+
+// executeOnLongPress("btn");
+
+let flag = false;
+function callback() {
+  flag = !flag; // toggle true/false
+  document.body.style.backgroundColor = flag ? "red" : "white";
 }
 
 let btnElement = document.querySelector("button");
+// import { executeOnLongPress } from "./longPress.js";
+import { executeOnLongPress } from "https://cdn.jsdelivr.net/gh/mantu-morya-simform/JS-Questions@388d31ffc69e59f74332379837fa5ebad97c8ae3/my-js-utils/longPress.js";
 
-executeOnLongPress(btnElement, 2, callback, "mantu", 21);
-
-// executeOnLongPress("btn");
+executeOnLongPress(btnElement, 2, callback);
