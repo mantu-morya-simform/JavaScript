@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f5f5f5;
+      }
+
+      .search__input {
+        width: 280px;
+      }
+
+      .search__input input {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+      }
+
+      .search__input input:focus {
+        border-color: #667eea;
+      }
+
+      .search__input input::placeholder {
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search__input">
+      <input
+        type="text"
+        placeholder="Search..."
+        onkeyup="debouncedSearch(event)"
+      />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
