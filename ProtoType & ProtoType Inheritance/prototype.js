@@ -13,7 +13,7 @@ let fName = "Mantu Kumar";
 //   __proto__: String.prototype,
 // };
 
-console.log(fName.__proto__); // Logs the String prototype with methods like anchor, at, big, etc.
+console.log(fName.__proto__); // Logs the String prototype with methods like atChar, at, length, etc.
 /* JS first checks the primitive itself for properties, then looks in __proto__ for inherited methods */
 console.log(fName.at(2)); // Accesses the 'at' method from String.prototype
 

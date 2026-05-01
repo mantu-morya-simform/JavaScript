@@ -12,7 +12,8 @@ p1.getFullName();
 const p2 = Object.create(p1);
 /*
 p2 = {
-  __proto__: (p1 = {
+  __proto__: (
+  p1 = {
     fName: "Mantu",
     fName: "Morya",
   }),

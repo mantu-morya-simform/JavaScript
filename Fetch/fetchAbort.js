@@ -10,6 +10,7 @@ const getData = () => {
 
   fetch(url, {
     signal,
+    mode: "no-cors",
     method: "GET",
     headers: {
       "Content-Type": "application/json",
