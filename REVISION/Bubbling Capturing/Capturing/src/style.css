@@ -1,0 +1,27 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grand-parent {
+  padding: 50px;
+  background: #e4d9d9;
+}
+
+.parent {
+  padding: 50px;
+  background: #afe7a1;
+}
+
+.child {
+  padding: 50px;
+  background: #e0b67f;
+}
